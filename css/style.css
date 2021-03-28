@@ -2,6 +2,90 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px){
+  .popup{
+    width: 70% !important	;
+  }
+
+  body {
+    flex-direction: column !important;
+    align-items: center !important;
+    min-width: 100vw !important;
+  }
+
+  body,
+  #sidebar {
+    font-size: 13px !important;
+  }
+
+  #sidebar {
+    width: 100% !important;
+	    padding: 1em !important;
+		margin-top: 3vh !important;
+  }
+
+  #view {
+    position: relative !important;
+    min-height: 0 !important;
+	    height: 60vh !important;
+    padding-top: calc(30vh - 150px) !important;
+  }
+
+  .header {
+    justify-content: center !important;
+  }
+
+  .title {
+	font-size: 6vw !important;
+  }
+
+  #labelFooter {
+    display: none !important;
+  }
+  
+  .button_1{
+	  display:none !important;
+  }
+  
+  .level {
+	  margin-top:2vh !important;
+	  align: center;
+  }
+  
+  td {
+	  width:50% !important;text-align: right !important; vertical-align: middle !important; 
+  }
+  
+  .select {
+    width: 30vw !important;
+  }
+  
+  #levelname{
+	  font-size: 5vw !important;
+  }
+  
+   #button_layout{
+	  display:block !important;
+  }
+  
+  .button-one, .button-two, .button-three {
+    font-size: 18px  !important;
+	padding: 1.5vw 2vw !important; 
+	margin-left: 2vw !important;
+	box-shadow: 0 5px #95a5a6 !important;
+}
+
+.popup h2 {
+	font-size: 6vw !important;
+}
+  
+}
+
+ #button_layout{
+	  display:none;
+  }
+
+
 html, body {
   min-height: 100%;
 }
@@ -40,7 +124,7 @@ body {
 }
 
 #view {
-  min-height: : calc(100vh - 16px);
+  min-height:calc(100vh - 16px);
   padding: 1em;
   margin-left: auto;
     margin-right: auto;
@@ -699,39 +783,6 @@ button:active {
   100% { background-position: 0 calc(10vw - 4px); }
 }
 
-@media only screen and (max-width: 767px) {
-  body {
-    flex-direction: column-reverse;
-    align-items: center;
-    min-width: 100vw;
-  }
-
-  body,
-  #sidebar {
-    font-size: 13px;
-  }
-
-  #sidebar {
-    width: 100%;
-  }
-
-  #view {
-    position: relative;
-    min-height: 0;
-  }
-
-  .header {
-    justify-content: center;
-  }
-
-  .title {
-    font-size: 26px;
-  }
-
-  #labelFooter {
-    display: none;
-  }
-}
 
 select {
   -webkit-appearance: none;
@@ -921,8 +972,8 @@ select {
 
 .popup h2 {
   margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+  color: #f94a62;
+  font-family: 'PT Sans', sans-serif;
 }
 .popup .close {
   position: absolute;
@@ -932,7 +983,7 @@ select {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: #000;
 }
 .popup .close:hover {
   color: #06D85F;
@@ -940,13 +991,6 @@ select {
 .popup .content {
   max-height: 30%;
   overflow: auto;
+    color: #000;
 }
 
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
-}
