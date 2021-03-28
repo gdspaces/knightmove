@@ -5,7 +5,8 @@
 @media screen and (max-width: 768px){
   .popup{
     width: 80% !important	;
-	    margin: 20px auto !important	;
+    height: 90% !important	;
+    margin: 20px auto !important	;
   }
 
   body {
