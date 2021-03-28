@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Knight Move</title>
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans|Autour+One|Source+Code+Pro' rel='stylesheet' type='text/css'>
@@ -34,10 +35,10 @@
 		</tbody>
 		</table>
 -->
-	  <table style=" width: 100%;margin-top:15vh" >
+	  <table class="level" style=" width: 100%;margin-top:15vh" >
 		<tbody>
 		<tr>
-		<td style="width: 20%;"><h2 style="font-size: 2vw;" id="levelname"> Level : </h2></td>
+		<td style="width: 20%;"><h2 style="font-size: 2vw;" id="levelname">&nbsp;Level&nbsp;:&nbsp;</h2></td>
 		<td style="width: 80%;">		
 			<div class="select">
 			  <select name="level" id="level"  onchange="loadgame()">
@@ -80,19 +81,20 @@
 		</tbody>
 		</table>
 
-<table style=" width: 100%;margin-top: 25vh;" >
+<table class="button_1" style=" width: 100%;margin-top: 25vh;" >
 <tbody>
 <tr>
 <!--<td style="width: 33.3333%;"> <button class="button-one" onclick="newgame()">New</button></td>-->
 <td style="width: 33.3333%;"> <button class="button-one" onclick="loadgame()">Restart</button></td>
 <td style="width: 33.3333%;"> <button class="button-one" onclick="undo()">Undo</button></td> 
 <td style="width: 33.3333%;"> <button class="button-one" onclick="solve()">Solve</button></td>
+<td style="width: 33.3333%;"> <button class="button-one" onclick="help()">Help</button></td>
 </tr>
 </tbody>
 </table>
 <div id="finished" class="overlay">
 	<div class="popup">
-		<h2>Congratualtion </h2>
+		<h2>Congratualtion</h2>
 		<a class="close" href="#" onclick="closefinish()">&times;</a>
 		<div class="content">
 			You have successfully completed the level.
@@ -105,10 +107,24 @@
 		<h2>Game Over</h2>
 		<a class="close" href="#" onclick="closegameover()">&times;</a>
 		<div class="content">
-			No move is left. Please try again.
+			No possible move exists! Please try again.
 		</div>
 	</div>
 </div>
+
+<div id="help" class="overlay">
+	<div class="popup">
+		<h2>Help</h2>
+		<a class="close" href="#" onclick="closehelp()">&times;</a>
+		<div class="content">
+			The Knight&rsquo;s Tour is a mathematical puzzle that has endured over 1000 years.<br><br>It is a sequence of moves of a knight on a chessboard such that the knight visits every box only once.<br><br>
+			This is simple: Click boxes in L-shaped paths, like the knight in chess, and see if you can turn all the red boxes to white without getting stuck! <br><br>
+			To start the game, click on any red box. Then click on next red box with a dot on it. You can't use the empty/white boxs to move around.</br></br>If you click on a box once you can't click it again. Game will finish when every red box has been clicked once.  <br><br>
+			In the Screen, you will get three buttons. <br> &bull; Restart : To restart the game <br> &bull; Undo : Undo the last move <br> &bull; Solve : Show the solution of the game. <br><br>
+		</div>
+	</div>
+</div>
+
 
     </section>
     <section id="view">
@@ -247,6 +263,23 @@
         </div>
 	 </div>
     </section>
+	
+    <section id="button_layout">
+      <div id="button_div">	
+	<table  style=" width: 100%;margin-top: 2vh;" >
+<tbody>
+<tr>
+<!--<td style="width: 33.3333%;"> <button class="button-one" onclick="newgame()">New</button></td>-->
+<td style="width: 33.3333%;"> <button class="button-one" onclick="loadgame()">Restart</button></td>
+<td style="width: 33.3333%;"> <button class="button-one" onclick="undo()">Undo</button></td> 
+<td style="width: 33.3333%;"> <button class="button-one" onclick="solve()">Solve</button></td>
+<td style="width: 33.3333%;"> <button class="button-one" onclick="help()">Help</button></td>
+</tr>
+</tbody>
+</table>
+	 </div>
+    </section>
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript">
 	function setSize() {
@@ -512,6 +545,15 @@
 			document.getElementById("gameover").style.visibility ="hidden";
 			document.getElementById("gameover").style.opacity = "0";
 			loadgame();
+	}
+	
+	function closehelp(){
+			document.getElementById("help").style.visibility ="hidden";
+			document.getElementById("help").style.opacity = "0";
+	}
+	function help(){
+			document.getElementById("help").style.visibility ="visible";
+			document.getElementById("help").style.opacity = "1";
 	}
 	
 	</script>
