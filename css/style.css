@@ -549,8 +549,8 @@ button:active {
   top: 1em;
   width: 40vw;
   height: 40vw;
-  min-width: 300px;
-  min-height: 300px;
+  min-width: 200px;
+  min-height: 200px;
   max-width: calc(100vh - 2em);
   max-height: calc(100vh - 2em);
   overflow: hidden;
