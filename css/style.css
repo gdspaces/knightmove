@@ -17,8 +17,6 @@
 #board {
   width: 60vw !important;
   height: 60vw !important;
-  min-width: 250px !important;
-  min-height: 250px !important;
 }	
 
   body,
