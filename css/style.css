@@ -13,6 +13,13 @@
     align-items: center !important;
     min-width: 100vw !important;
   }
+	
+#board {
+  width: 60vw !important;
+  height: 60vw !important;
+  min-width: 250px !important;
+  min-height: 250px !important;
+}	
 
   body,
   #sidebar {
@@ -549,8 +556,8 @@ button:active {
   top: 1em;
   width: 40vw;
   height: 40vw;
-  min-width: 200px;
-  min-height: 200px;
+  min-width: 300px;
+  min-height: 300px;
   max-width: calc(100vh - 2em);
   max-height: calc(100vh - 2em);
   overflow: hidden;
