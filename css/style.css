@@ -80,6 +80,8 @@
   
    #button_layout{
 	  display:block !important;
+	   	  margin-left: auto !important;
+    margin-right: auto !important;
   }
   
   .button-one, .button-two, .button-three {
