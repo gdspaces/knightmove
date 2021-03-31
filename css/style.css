@@ -13,16 +13,20 @@
     align-items: center !important;
     min-width: 100vw !important;
   }
-	
-#board {
-  width: 60vw !important;
-  height: 60vw !important;
-}	
 
   body,
   #sidebar {
     font-size: 13px !important;
   }
+  
+  #board {
+  width: 60vw !important;
+  height: 60vw !important;
+  /*min-width: 250px !important;
+  min-height: 250px !important;*/
+      max-width: 40vh !important;
+    max-height: 40vh !important;
+}
 
   #sidebar {
     width: 100% !important;
@@ -554,8 +558,8 @@ button:active {
   top: 1em;
   width: 40vw;
   height: 40vw;
-  min-width: 300px;
-  min-height: 300px;
+  /*min-width: 300px;
+  min-height: 300px;*/
   max-width: calc(100vh - 2em);
   max-height: calc(100vh - 2em);
   overflow: hidden;
@@ -1005,4 +1009,3 @@ select {
   overflow: auto;
     color: #000;
 }
-
