@@ -81,7 +81,7 @@
    #button_layout{
 	  display:block !important;
 	   	  margin-left: 10vh !important;
-    margin-right: auto !important;
+    margin-right: 10vh !important;
   }
   
   .button-one, .button-two, .button-three {
