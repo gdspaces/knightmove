@@ -825,6 +825,7 @@ select::-ms-expand {
   width: 15vw;
   height: 6vh;
   line-height: 3;
+  max-height: 40px;
   background: #2c3e50;
   overflow: hidden;
   border-radius: .25em;
