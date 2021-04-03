@@ -614,13 +614,13 @@ button:active {
 
 .plot-red {
     width: 98%;
-    height: calc(100% - 10px);
+    height: calc(100% - 1vh);
     background-color: #f94a62;
     outline: none;
     border: none;
     background-size: calc(10vw - 4px);
     border-radius: 9px;
-    box-shadow: 0 9px #f72d48;
+    box-shadow: 0 1vh #f72d48;
 	text-align: center;
 	padding-top: calc(50% - 6px);
 	color: #f3f9f0;
@@ -629,7 +629,7 @@ button:active {
 
 .plot-red-broder {
     width: 98%;
-    height: calc(100% - 10px);
+    height: calc(100% - 1vh);
     background-color: #f3f9f0;
     outline: #ef0828;
     border: #ef0828;
@@ -637,7 +637,7 @@ button:active {
     border-width: 2px;
     background-size: calc(10vw - 4px);
     border-radius: 9px;
-    box-shadow: 0 9px #f72d48;
+    box-shadow: 0 1vh #f72d48;
 	text-align: center;
 	font-size:2em;
 }
