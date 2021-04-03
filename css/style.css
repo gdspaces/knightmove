@@ -994,6 +994,11 @@ select {
   color: #f94a62;
   font-family: 'PT Sans', sans-serif;
 }
+
+.popup h3 {
+text-align : center;
+}
+
 .popup .close {
   position: absolute;
   top: 20px;
