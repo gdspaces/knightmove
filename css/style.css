@@ -613,7 +613,7 @@ button:active {
 }
 
 .plot-red {
-    width: 98%;
+    width: 97%;
     height: calc(100% - 1vh);
     background-color: #f94a62;
     outline: none;
@@ -628,7 +628,7 @@ button:active {
 
 
 .plot-red-broder {
-    width: 98%;
+    width: 97%;
     height: calc(100% - 1vh);
     background-color: #f3f9f0;
     outline: #ef0828;
