@@ -682,7 +682,11 @@
 	document.getElementById("level").selectedIndex = index;
 	if(null == index)
 	{
+		help();
 		index = 0;
+		if (typeof(Storage) !== "undefined") {			
+		  localStorage.setItem("knight-movelevel", index);
+		}
 	}
 	
 	var set=""
